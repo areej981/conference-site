@@ -40,6 +40,20 @@ a {
   margin-right: 10px;
   text-decoration: none;
 }
+.en-page {
+  direction: ltr;
+}
+/* الفقرات الإنجليزية تكون بمحاذاة اليسار */
+.en-page .card p {
+  text-align: left;
+}
+/* العناوين تظل في الوسط لو حابة */
+.en-page .section-title,
+.en-page .header-title h1,
+.en-page .header-title .subtitle {
+  text-align: center;
+}
+
 /* الشريط الثاني */
 .second-bar {
   background: #f1f4f8;
