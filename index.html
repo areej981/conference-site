@@ -269,7 +269,7 @@
           </p>
         </div>
         <div>
-          <form class="form" action="https://formsubmit.co/areej.cis@gmail.com" method="POST">
+          <form class="form" action="https://formsubmit.co/areej.cis@gmail.com" method="POST" enctype="multipart/form-data">
 
   <input type="hidden" name="_subject" value="تسجيل جديد في المؤتمر">
   <input type="hidden" name="_template" value="table">
@@ -302,8 +302,8 @@
 
   <div class="form-group">
     <label>ملخص البحث</label>
-    <textarea name="ملخص البحث" rows="6" placeholder="اكتب ملخص البحث هنا..."></textarea>
-  </div>
+     <input type="file" id="abstract" name="abstract" accept=".pdf,.doc,.docx" required>
+</div>
 
   <button type="submit" class="btn primary">إرسال طلب مبدئي</button>
 
