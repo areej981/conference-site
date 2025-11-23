@@ -269,29 +269,26 @@
           </p>
         </div>
         <div>
-          <form class="form" action="https://formsubmit.co/areej.cis@gmail.com" method="POST" multipart/form-data>
-  <!-- الاسم الكامل -->
+          <form class="form" action="https://formsubmit.co/areej.cis@gmail.com" method="POST" enctype="multipart/form-data">
+
   <div class="form-group">
-    <label for="full-name">الاسم الكامل</label>
-    <input id="full-name" name="full_name" type="text" placeholder="اكتب اسمك الثلاثي" required>
+    <label>الاسم الكامل</label>
+    <input type="text" name="full-name" required>
   </div>
 
-  <!-- البريد الإلكتروني -->
   <div class="form-group">
-    <label for="email">البريد الإلكتروني</label>
-    <input id="email" name="email" type="email" placeholder="example@mail.com" required>
+    <label>البريد الإلكتروني</label>
+    <input type="email" name="email" required>
   </div>
 
-  <!-- الجهة / الجامعة -->
   <div class="form-group">
-    <label for="affiliation">الجهة / الجامعة</label>
-    <input id="affiliation" name="affiliation" type="text" placeholder="اسم الجامعة أو المؤسسة">
+    <label>الجهة / الجامعة</label>
+    <input type="text" name="affiliation">
   </div>
 
-  <!-- نوع المشاركة -->
   <div class="form-group">
-    <label for="type">نوع المشاركة</label>
-    <select id="type" name="participation_type">
+    <label>نوع المشاركة</label>
+    <select name="type">
       <option>مشاركة بورقة بحثية حضورياً</option>
       <option>مشاركة بورقة بحثية عن بُعد</option>
       <option>مشاركة بدون ورقة حضورياً</option>
@@ -299,24 +296,14 @@
     </select>
   </div>
 
-  <!-- ملخص البحث -->
   <div class="form-group">
-    <label for="abstract">ملخّص البحث</label>
-    <textarea id="abstract" name="abstract" rows="5" placeholder="اكتب ملخص البحث هنا" required></textarea>
+    <label>إرفاق ملخص البحث</label>
+    <input type="file" name="abstract" accept=".pdf,.doc,.docx" required>
   </div>
 
-  <!-- إعدادات FormSubmit -->
   <input type="hidden" name="_subject" value="تسجيل جديد في المؤتمر">
   <input type="hidden" name="_template" value="table">
-  <!-- اختياري: رسالة شكر بعد الإرسال -->
-  <!-- <input type="hidden" name="_next" value="https://areej981.github.io/conference-site/thanks.html"> -->
-  <!-- اختياري: تعطيل كابتشا -->
-  <!-- <input type="hidden" name="_captcha" value="false"> -->
-<div class="form-group">
-  <label for="abstract">إرفاق ملخص البحث (PDF أو Word)</label>
-  <input id="abstract" type="file" name="abstract"
-         accept=".pdf,.doc,.docx" required>
-</div>
+
   <button type="submit" class="btn primary">إرسال طلب مبدئي</button>
 </form>
 
