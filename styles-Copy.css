@@ -188,6 +188,7 @@ a {
   margin-top: 0.25rem;
   font-size: 0.9rem;
   color: #555;
+  text-align: center;
 }
 
 /* قائمة التنقل */
@@ -510,6 +511,7 @@ height: 120px;
 /* تجاوب */
 @media (max-width: 768x) {
   .header-inner {
+     display: flex;
     flex-direction: column;
     text-align: center;
   }
