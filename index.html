@@ -269,7 +269,7 @@
           </p>
         </div>
         <div>
-          <form class="form" action="https://formsubmit.co/areej.cis@gmail.com" method="POST">
+          <form class="form" action="https://formsubmit.co/areej.cis@gmail.com" method="POST" multipart/form-data>
   <!-- الاسم الكامل -->
   <div class="form-group">
     <label for="full-name">الاسم الكامل</label>
@@ -312,7 +312,11 @@
   <!-- <input type="hidden" name="_next" value="https://areej981.github.io/conference-site/thanks.html"> -->
   <!-- اختياري: تعطيل كابتشا -->
   <!-- <input type="hidden" name="_captcha" value="false"> -->
-
+<div class="form-group">
+  <label for="abstract">إرفاق ملخص البحث (PDF أو Word)</label>
+  <input id="abstract" type="file" name="abstract"
+         accept=".pdf,.doc,.docx" required>
+</div>
   <button type="submit" class="btn primary">إرسال طلب مبدئي</button>
 </form>
 
