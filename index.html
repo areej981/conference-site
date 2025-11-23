@@ -270,32 +270,40 @@
         </div>
         <div>
           <form class="form" action="https://formsubmit.co/areej.cis@gmail.com" method="POST">
-            <div class="form-group">
-              <label for="full-name">الاسم الكامل</label>
-              <input id="full-name" type="text" placeholder="اكتب اسمك الثلاثي" required>
-            </div>
-            <div class="form-group">
-              <label for="email">البريد الإلكتروني</label>
-              <input id="email" type="email" placeholder="example@mail.com" required>
-            </div>
-            <div class="form-group">
-              <label for="affiliation">الجهة / الجامعة</label>
-              <input id="affiliation" type="text" placeholder="اسم الجامعة أو المؤسسة">
-            </div>
-            <div class="form-group">
-              <label for="type">نوع المشاركة</label>
-              <select id="type">
-                <option>مشاركة بورقة بحثية حضورياً</option>
-                <option>مشاركة بورقة بحثية عن بُعد</option>
-                <option>مشاركة بدون ورقة حضورياً</option>
-                <option>مشاركة بدون ورقة عن بُعد</option>
-              </select>
-            </div>
-            <button type="submit" class="btn primary">إرسال طلب مبدئي</button>
-          <input type="hidden" name="_subject" value="تسجيل جديد في المؤتمر">
-<input type="hidden" name="_template" value="table">
+
+  <input type="hidden" name="_subject" value="تسجيل جديد في المؤتمر">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+
+  <div class="form-group">
+    <label for="full-name">الاسم الكامل</label>
+    <input id="full-name" name="الاسم الكامل" type="text" placeholder="اكتب اسمك الثلاثي" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">البريد الإلكتروني</label>
+    <input id="email" name="البريد الإلكتروني" type="email" placeholder="example@mail.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="affiliation">الجهة / الجامعة</label>
+    <input id="affiliation" name="الجهة" type="text" placeholder="اسم الجامعة أو المؤسسة">
+  </div>
+
+  <div class="form-group">
+    <label for="type">نوع المشاركة</label>
+    <select id="type" name="نوع المشاركة">
+      <option>مشاركة بورقة بحثية حضورياً</option>
+      <option>مشاركة بورقة بحثية عن بُعد</option>
+      <option>مشاركة بدون ورقة حضورياً</option>
+      <option>مشاركة بدون ورقة عن بُعد</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn primary">إرسال طلب مبدئي</button>
 
 </form>
+
         </div>
       </div>
     </div>
