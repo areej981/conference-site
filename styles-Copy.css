@@ -1,0 +1,568 @@
+/* إعدادات عامة */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Tahoma", "Cairo", system-ui, sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* الحاوية */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+/* الشريط العلوي */
+.top-bar {
+  background: #315b7d;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+}
+.send-btn {
+  background: #427aa1;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+/* الشريط الثاني */
+.second-bar {
+  background: #f1f4f8;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+/* شريط إعلان */
+.top-alert {
+  background: #365d7f;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.top-alert-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0;
+}
+
+.btn-small {
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #ffffff;
+  font-size: 0.8rem;
+}
+
+.btn-small.light {
+  background: transparent;
+  color: #fff;
+}
+
+/* شريط الأيقونات */
+.top-icons {
+  background: #f1f3f7;
+  border-bottom: 1px solid #dde1eb;
+  font-size: 0.9rem;
+}
+
+.top-icons-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+.icons-left {
+  display: flex;
+  gap: 0.5rem;
+}
+.lang {
+  background: #2f5d87;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.icon-text {
+  font-size: 0.9rem;
+}
+
+.lang-btn {
+  padding: 0.15rem 0.7rem;
+  border-radius: 4px;
+  background: #365d7f;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+/* الهيدر 
+.site-header {
+  background: #ffffff;
+  padding: 1.4rem 0 1.8rem;
+}*/
+
+.site-header {
+  background: white;
+  padding: 30px 0;
+}
+/*.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}*/
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+.header-logo {
+  flex: 0 0 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.logo-text {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 6px;
+  color: #555;
+}
+
+.circle-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #6d8eb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fb;
+  overflow: hidden;
+}
+
+.circle-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #14385a;
+}
+
+.header-title .subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.header-title .meta {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* قائمة التنقل */
+.main-nav {
+  background: #4e82aa;
+}
+
+.nav-inner {
+  padding: 0.1rem 0;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.nav-menu li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* بانر */
+.hero-banner {
+  background: #e6edf5;
+  border-bottom: 1px solid #d4dde8;
+}
+
+.hero-banner-inner {
+  padding: 1.8rem 0 1.8rem;
+}
+
+/* لو حطيتي صورة banner.jpg هيتم تطبيقها هنا */
+.hero-banner {
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* في حال لا توجد صورة، سيظهر لون شفاف فوق الخلفية */
+.hero-banner::before {
+  content: "";
+  display: block;
+  position: inset 0;
+}
+
+/* نص البانر */
+.hero-banner-text {
+  background: rgba(255, 255, 255, 0.88);
+  max-width: 600px;
+  padding: 1.4rem 1.6rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.hero-banner-text h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #14385a;
+}
+
+/* أزرار عامة */
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn.primary {
+  background: #cfa542;
+  border-color: #ba9133;
+  color: #111;
+}
+
+.btn.primary:hover {
+  background: #ba9133;
+}
+
+/* الأقسام */
+.section {
+  padding: 2.4rem 0;
+  background: #f5f6fa;
+}
+
+.section.alt {
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 0 1.6rem;
+  color: #14385a;
+}
+
+/* كروت */
+.card {
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  background: #ffffff;
+  border: 1px solid #dde1eb;
+}
+
+.card.dark {
+  background: #3d3f45;
+  color: #f8f8f8;
+}
+
+/* شبكة ثنائية */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* قوائم */
+.list {
+  margin: 0;
+  padding-right: 1.1rem;
+  font-size: 0.95rem;
+}
+
+.list li {
+  margin-bottom: 0.4rem;
+}
+
+/* عناوين فرعية */
+.sub-title {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #14385a;
+}
+
+/* نصوص صغيرة */
+.small-text {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* برنامج المؤتمر */
+.program-day {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.day-label {
+  text-align: center;
+  background: #4e82aa;
+  color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.day-month {
+  display: block;
+  padding: 0.35rem 0;
+  background: #365d7f;
+  font-size: 0.8rem;
+}
+
+.day-num {
+  display: block;
+  padding: 0.6rem 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.day-content h4 {
+  margin: 0 0 0.7rem;
+  font-size: 1.05rem;
+  color: #14385a;
+}
+
+.session {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #e0e3ec;
+}
+
+.session:last-child {
+  border-bottom: none;
+}
+
+.session-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.session-meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* جدول الرسوم */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.fees-table th,
+.fees-table td {
+  border: 1px solid #dde1eb;
+  padding: 0.55rem 0.6rem;
+  text-align: right;
+}
+
+.fees-table thead {
+  background: #e1e7f1;
+}
+
+/* النماذج */
+.form {
+  background: #ffffff;
+  padding: 1.3rem 1.4rem;
+  border-radius: 8px;
+  border: 1px solid #dde1eb;
+}
+
+.form-group {
+  margin-bottom: 0.9rem;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #c7ccdd;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background: #fbfcff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #365d7f;
+}
+
+/* تمييز نص */
+.highlight {
+  font-weight: 600;
+  color: #14385a;
+}
+
+/* الفوتر */
+.site-footer {
+  background: #3d3f45;
+  color: #f1f1f1;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0 1rem;
+}
+
+.footer-col h4 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #585a5f;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 0.85rem;
+}
+.logo-box {
+  text-align: center;
+}
+
+.logo-box img {
+  width: 120px;
+height: 120px;
+  border-radius: 50%;
+  border: 2px solid #6d8eb0;
+}
+
+.logo-box span {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* تجاوب */
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+  }
+
+  .header-logo {
+    order: -1;
+  }
+.header-title {
+  text-align: center;
+  max-width: 600px;
+}
+.header-title h1 {
+  font-size: 30px;
+  color: #103a5d;
+}
+.circle-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #6d8eb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fb;
+  overflow: hidden; /* مهم حتى ما تطلع أجزاء من الصورة خارج الدائرة */
+}
+.circle-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* تخلي الشعار كامل داخل الدائرة بدون قص */
+}
+  .nav-menu {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner-text {
+    max-width: 100%;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .top-alert-content {
+    justify-content: center;
+  }
+
+  .top-icons-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
